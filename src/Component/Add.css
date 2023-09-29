@@ -196,3 +196,14 @@
   max-width: 800px; /* Adjust as needed */
   margin: 0 auto;
   }
+  .myForm{
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 768px) {
+    .Lise{
+      display: flex;
+      flex: 1; 
+      flex-direction: column;
+      }
+  }

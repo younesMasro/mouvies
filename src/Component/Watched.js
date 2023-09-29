@@ -1,17 +1,14 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-
 import Card from './Card'
-
-
 export default function Watched() {
-  const favoriteMovies = useSelector((state) => state.favorite.favoriteMovies);
-  const dispatch = useDispatch();
-console.log(favoriteMovies)
 
- 
+  const favoriteMovies = useSelector((state) => state.favorite.favoriteMovies.filter((movie) => movie.favorite));
+  
+
   return (
     <>
+    <h3 style={{"color":"#EA7FFB"}}>{favoriteMovies.length}<span> Movies</span></h3>
     <div className='Lise'>
          {favoriteMovies.length > 0 ? (
            favoriteMovies.map((item) => {
@@ -19,8 +16,7 @@ console.log(favoriteMovies)
          <>
          <div>
          <div>   <br></br><br></br>
-              <Card id={item.id} Title={item.Title} Poster={item.Poster} btns={false}></Card>
-            
+              <Card id={item.id} Title={item.Title} Poster={item.Poster} btns={false} remov="Fav"></Card>
               </div>
               </div>
               </>      
