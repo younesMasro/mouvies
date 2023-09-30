@@ -6,7 +6,7 @@ import Header from './Component/Header';
 import Home from './Component/Home';
 import { Provider } from 'react-redux';
 import store from './Redux/Store';
-import { BrowserRouter as Router, Route, Switch, Link, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Pgae from './Home/Pgae';
 
 function App() {
