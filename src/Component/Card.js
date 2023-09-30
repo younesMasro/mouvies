@@ -3,7 +3,7 @@ import { addToFavorites } from '../Redux/Actions';
 import { removeFromFavorites } from '../Redux/Actions';
 import { seenMovie } from '../Redux/Actions';
 import { removeFromSeen } from '../Redux/Actions';
-import { useState } from 'react';
+
 
 export default function Card(props) {
  
